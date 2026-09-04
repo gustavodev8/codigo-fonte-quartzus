@@ -30,13 +30,13 @@ const projects = [
     number: "01", category: "WEBSITE • PERSONAL BRANDING • SOCIAL MEDIA", name: "Juliana Cardoso",
     description: "Website desenvolvido para uma profissional de social media, criado para fortalecer seu posicionamento digital, apresentar seus serviços e transformar visitantes em potenciais clientes.",
     // Captura local da tela inicial de juliana-cardoso-showcase.vercel.app — substituir pela imagem final do projeto quando disponível.
-    image: "/juliana-cardoso-home.png", alt: "Página inicial do website de Juliana Cardoso", layout: "wide",
+    image: "/juliana-cardoso-home.webp", alt: "Imagem principal do website de Juliana Cardoso", layout: "wide",
   },
   {
     number: "02", category: "WEBSITE • NUTRIÇÃO • CONVERSÃO", name: "Felipe David",
     description: "Website desenvolvido para um nutricionista clínico e esportivo, com foco em autoridade profissional, apresentação dos serviços, resultados e agendamento de consultas.",
     // Captura local da tela inicial de fillipedavidnutri.online — substituir pela imagem final do projeto quando disponível.
-    image: "/fillipe-david-home.png", alt: "Página inicial do website de Felipe David", layout: "offset",
+    image: "/fillipe-david-home.jpeg", alt: "Imagem principal do website de Felipe David", layout: "offset",
   },
   {
     number: "03", category: "CRM • IA • AUTOMAÇÃO • ATENDIMENTO", name: "CampusTalk",
