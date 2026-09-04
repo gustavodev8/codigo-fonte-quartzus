@@ -41,7 +41,8 @@ const projects = [
   {
     number: "03", category: "CRM • IA • AUTOMAÇÃO • ATENDIMENTO", name: "CampusTalk",
     description: "CRM desenvolvido para a Faculdade Santíssimo, criado para centralizar atendimentos, organizar a operação e utilizar inteligência artificial para auxiliar e automatizar o atendimento aos alunos.",
-    image: campusAsset.url, alt: "Painel do sistema CampusTalk", layout: "system",
+    // Print fornecido pelo cliente para exibição no link in bio.
+    image: "/campustalk-home.png", alt: "Painel do sistema CampusTalk", layout: "system",
     tags: ["CRM", "IA", "WhatsApp", "Automação", "Atendimento"],
   },
 ];
