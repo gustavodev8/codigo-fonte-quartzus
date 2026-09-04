@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowDown, ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Gem, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import julianaAsset from "../assets/juliana-cardoso.png.asset.json";
 import felipeAsset from "../assets/felipe-david.png.asset.json";
 import campusAsset from "../assets/campustalk.png.asset.json";
-import logoAsset from "../assets/quartzus-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -70,7 +69,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/88 backdrop-blur-xl">
         <div className="mx-auto grid h-18 max-w-[1440px] grid-cols-[minmax(0,1fr)_auto] items-center px-5 sm:px-8 lg:h-20 lg:grid-cols-[1fr_auto_1fr] lg:px-12">
           <a href="#inicio" className="flex min-w-0 items-center gap-3" aria-label="Quartzus, início">
-            <img src={logoAsset.url} alt="" className="h-8 w-8 shrink-0 object-contain" />
+            <Gem aria-hidden="true" className="h-8 w-8 shrink-0 text-white" strokeWidth={1.4} />
             <span className="font-display text-lg font-semibold tracking-[0.12em]">QUARTZUS</span>
           </a>
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
@@ -163,7 +162,7 @@ function Index() {
 
       <footer className="border-t border-border px-5 pb-8 pt-14 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-[1440px]">
-          <div className="grid gap-10 lg:grid-cols-[1fr_auto]"><div><div className="flex items-center gap-3"><img src={logoAsset.url} alt="" className="h-10 w-10 object-contain" /><span className="font-display text-2xl tracking-[0.12em]">QUARTZUS</span></div><p className="mt-4 text-sm text-muted-foreground">Websites • Sistemas • Automação • IA</p></div><nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm">{nav.map(([label, href]) => <a key={href} href={href} className="nav-link">{label}</a>)}</nav></div>
+          <div className="grid gap-10 lg:grid-cols-[1fr_auto]"><div><div className="flex items-center gap-3"><Gem aria-hidden="true" className="h-10 w-10 text-white" strokeWidth={1.4} /><span className="font-display text-2xl tracking-[0.12em]">QUARTZUS</span></div><p className="mt-4 text-sm text-muted-foreground">Websites • Sistemas • Automação • IA</p></div><nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm">{nav.map(([label, href]) => <a key={href} href={href} className="nav-link">{label}</a>)}</nav></div>
           <div className="mt-16 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between"><span>© 2026 QUARTZUS. Todos os direitos reservados.</span><span>ESTRATÉGIA • DESIGN • TECNOLOGIA</span></div>
         </div>
       </footer>
