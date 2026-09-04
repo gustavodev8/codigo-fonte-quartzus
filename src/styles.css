@@ -74,7 +74,7 @@
 .project-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 900ms cubic-bezier(.2,.7,.2,1), filter 500ms ease; filter: grayscale(.2); }
 .project:hover .project-media img { transform: scale(1.025); filter: grayscale(0); }
 .project-meta { align-self: end; }
-.project-wide .project-media { aspect-ratio: 1.95 / 1; }
+.project-wide .project-media { aspect-ratio: 16 / 9; }
 .project-offset .project-media { aspect-ratio: 1.95 / 1; }
 .project-system .project-media { aspect-ratio: 1.95 / 1; padding: clamp(.5rem, 1.5vw, 1.5rem); background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 36px 36px; }
 .project-system .project-media img { object-fit: contain; }
@@ -101,6 +101,6 @@
   .process-step:nth-child(even) { border-right: 0; }
 }
 @media (min-width: 1024px) { .process-step:nth-child(2) { border-right: 1px solid var(--border); } .process-step:last-child { border-right: 0; } }
-@media (max-width: 767px) { .hero-grid::after { background: linear-gradient(to bottom, transparent, var(--background) 75%); } .ambient-lines { right: -35%; top: 18%; width: 85vw; } .project-media { aspect-ratio: 1.65 / 1 !important; } }
+@media (max-width: 767px) { .hero-grid::after { background: linear-gradient(to bottom, transparent, var(--background) 75%); } .ambient-lines { right: -35%; top: 18%; width: 85vw; } .project-media { aspect-ratio: 1.65 / 1 !important; } .project-wide .project-media { aspect-ratio: 16 / 9 !important; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } [data-reveal] { opacity: 1; transform: none; } }
 @keyframes drift { from { transform: rotate(38deg) scale(.94); } to { transform: rotate(48deg) scale(1.04); } }
